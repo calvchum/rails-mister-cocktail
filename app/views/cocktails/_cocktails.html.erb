@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <% @cocktails.each_with_index do |f, counter| %>
+      <div class="col col-xs-12 col-sm-4">
+        <div class="card">
+          <div class="card-description">
+            <h2 class="cocktail-name"><%= f.name %></h2>
+          </div>
+          <a class="card-link" href="#" ></a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
