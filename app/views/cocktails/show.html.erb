@@ -1,1 +1,6 @@
+<div class="show-wrapper">
+  <%= cl_image_tag @cocktail.photo, crop: :fill %>
+</div>
 <h1><%= @cocktail.name %></h1>
+<%= link_to 'New Dose', new_cocktail_dose_path(@cocktail)  %>
+<p>new dose link</p>

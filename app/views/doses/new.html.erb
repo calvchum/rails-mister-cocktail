@@ -1,0 +1,6 @@
+<p>add a form that creates a new dose</p>
+<p>dose form has ingredients drop down and "dose description"</p>
+<%= simple_form_for([@cocktail, @dose]) do |f| %>
+  <%= f.input :ingredient_id, collections: @ingredients %>
+  <%= f.input :description %>
+<% end %>

@@ -4,6 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.4.4'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary'
+gem 'carrierwave', '~> 1.2'
+
 # LeWagon Custom Setup
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3.7'
